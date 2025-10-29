@@ -39,7 +39,7 @@ const HealthDataComponent = () => {
 
 const HealthProfile = () => {
     return (
-        <Card className="h-full w-full bg-linear-to-br from-primary to-background">
+        <Card className="h-full w-full bg-linear-to-br from-primary to-black text-white">
             <CardHeader>
                 <CardTitle className="flex font-medium w-full items-center justify-between text-2xl">
                     Mon Profil
