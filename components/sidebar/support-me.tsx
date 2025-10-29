@@ -31,7 +31,7 @@ const SupportMe = () => {
             <Button
                 asChild
                 variant="outline"
-                className="w-full gap-2"
+                className="w-full gap-2 bg-input/20 hover:bg-input/30 border-input/30 text-white hover:text-white"
             >
                 <Link href="" target="_blank" rel="noopener noreferrer">
                     Soutenir le projet
