@@ -22,16 +22,16 @@ const HealthDataComponent = () => {
     return (
         <div className="w-full grid grid-cols-3 gap-4 bg-primary/20 py-3 rounded-xl">
             <div className="flex flex-col items-center">
-                <span className="capitalize text-xl">Taille</span>
-                <span className="text-muted-foreground">{currentUser.height}</span>
+                <span className="capitalize text-xl md:text-lg lg:text-xl">Taille</span>
+                <span className="text-muted-foreground text-lg md:text-sm lg:text-lg">{currentUser.height}</span>
             </div>
             <div className="flex flex-col items-center">
-                <span className="capitalize text-xl">poids</span>
-                <span className="text-muted-foreground">{currentUser.weight}</span>
+                <span className="capitalize text-xl md:text-lg lg:text-xl">poids</span>
+                <span className="text-muted-foreground text-lg md:text-sm lg:text-lg">{currentUser.weight}</span>
             </div>
             <div className="flex flex-col items-center">
-                <span className="capitalize text-xl">âge</span>
-                <span className="text-muted-foreground">{currentUser.age}</span>
+                <span className="capitalize text-xl md:text-lg lg:text-xl">âge</span>
+                <span className="text-muted-foreground text-lg md:text-sm lg:text-lg">{currentUser.age}</span>
             </div>
         </div>
     )
@@ -47,22 +47,22 @@ const HealthProfile = () => {
                 </CardTitle>
             </CardHeader>
             <CardContent className="flex-1 flex items-center justify-center gap-4">
-                <Avatar className="w-20 h-20 rounded-lg">
+                <Avatar className="w-20 h-20 md:w-10 md:h-10 lg:w-20 lg:h-20  rounded-lg">
                     <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn"/>
                     <AvatarFallback className="rounded-lg">{currentUser.surname.charAt(0)}{currentUser.name.charAt(0)}</AvatarFallback>
                 </Avatar>
                 <div className="">
-                    <div className="text-4xl flex gap-2 justify-center">
+                    <div className="text-4xl md:text-2xl lg:text-4xl  flex gap-2 justify-evenly">
                         <span>{currentUser.name}</span>
                         <span className="uppercase">{currentUser.surname}</span>
                     </div>
-                    <div className="flex gap-4 text-lg justify-center">
+                    <div className="flex gap-4 text-lg md:text-xs lg:text-lg justify-center">
                         <span className="flex items-center gap-2">
-                            <Medal className="size-6 text-muted-foreground"/>
+                            <Medal className="size-6 md:size-4 lg:size-6 text-muted-foreground"/>
                             <span className="text-muted-foreground">{currentUser.streak}</span>
                         </span>
                         <span className="flex items-center gap-2">
-                            <Coins className="size-6 text-muted-foreground"/>
+                            <Coins className="size-6 md:size-4 lg:size-6 text-muted-foreground"/>
                             <span className="text-muted-foreground">{currentUser.nbTokens}</span>
                         </span>
                     </div>

@@ -5,8 +5,8 @@ import { Bell } from 'lucide-react'
 const Notifications = () => {
   return (
     <Popover>
-        <PopoverTrigger>
-            <Button variant={'outline'} className='h-12 w-12' suppressHydrationWarning>
+        <PopoverTrigger asChild>
+            <Button variant={'outline'} className='h-12 w-12'>
                 <Bell />
             </Button>
         </PopoverTrigger>

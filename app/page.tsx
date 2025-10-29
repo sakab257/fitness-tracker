@@ -1,13 +1,18 @@
 import BentoGridDesktop from "@/components/dashboard/bento-grid-desktop";
 import GridMobile from "@/components/dashboard/grid-mobile";
+import { currentUser } from "@/lib/fake-data";
 
 export default function Home() {
   return (
-    <div className="w-full h-full px-4 pb-4 overflow-auto xl:overflow-hidden">
-        <div className="hidden xl:block h-full">
+    <div className="w-full h-full overflow-auto xl:overflow-hidden">
+        <div className="w-full flex flex-col xl:flex-row justify-between items-center px-5 pb-2 xl:pb-1">
+          <h1 className="flex justify-center xl:justify-start text-2xl transition-all">Bienvenue, {currentUser.name}<span className="uppercase ml-2">{currentUser.surname}</span></h1>
+          <p className="text-center text-xs text-muted-foreground">Suivez vos entraînements, calories, nutrition et activité globale dans une application tout-en-en.</p>
+        </div>
+        <div className="hidden xl:flex h-full">
           <BentoGridDesktop />
         </div>
-        <div className="xl:hidden">
+        <div className="xl:hidden px-2 pb-2 xl:pb-0">
           <GridMobile />
         </div>
       </div>

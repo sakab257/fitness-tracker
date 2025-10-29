@@ -7,7 +7,7 @@ import Notifications from "@/components/header/notifications"
 
 const Header = () => {
     return (
-        <div className="w-full h-[75px] flex items-center justify-between pt-1.5" suppressHydrationWarning>
+        <div className="w-full h-[75px] flex items-center justify-between pt-1.5">
             <div className="flex items-center gap-4 pl-4">
                 <SidebarTrigger className="w-12 h-12" variant={'outline'}/>
                 {/* <div className="hidden md:block">
