@@ -6,7 +6,7 @@ const Notifications = () => {
   return (
     <Popover>
         <PopoverTrigger>
-            <Button variant={'outline'} className='h-12 w-12'>
+            <Button variant={'outline'} className='h-12 w-12' suppressHydrationWarning>
                 <Bell />
             </Button>
         </PopoverTrigger>

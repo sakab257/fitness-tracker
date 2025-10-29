@@ -2,10 +2,10 @@ import { LayoutDashboard, Dumbbell, Utensils, HeartPulse, Goal, ChartSpline, Set
 
 export const navigationData = [
     {label: "Dashboard", href:"/", icon:LayoutDashboard},
-    {label: "Entraînement", href:"/", icon: Dumbbell},
-    {label: "Nutrition", href:"/", icon: Utensils},
-    {label: "Profil", href:"/", icon: HeartPulse},
-    {label: "Objectifs", href:"/", icon: Goal},
-    {label: "Analyse", href:"/", icon: ChartSpline},
-    {label: "Paramètres", href:"/", icon: Settings},
+    {label: "Entraînement", href:"/workout", icon: Dumbbell},
+    {label: "Nutrition", href:"/food", icon: Utensils},
+    {label: "Profil", href:"/health", icon: HeartPulse},
+    {label: "Objectifs", href:"/goals", icon: Goal},
+    {label: "Analyse", href:"/analytics", icon: ChartSpline},
+    {label: "Paramètres", href:"/settings", icon: Settings},
 ]
