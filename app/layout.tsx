@@ -8,7 +8,7 @@ import Header from "@/components/header/header";
 
 
 export const metadata: Metadata = {
-  title: "Sanetee",
+  title: "Saniti",
   description: "Un fitness tracker spécialement pour Barta",
 };
 
