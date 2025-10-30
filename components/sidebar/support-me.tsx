@@ -15,7 +15,7 @@ const SupportMe = () => {
   return (
     <Card
         className="bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/support-background.jpg')" }}
+        style={{ backgroundImage: "url('/asset/support-background.jpg')" }}
     >
         <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
         <CardHeader className="relative z-10">

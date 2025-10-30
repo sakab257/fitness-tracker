@@ -16,7 +16,7 @@ export default function Logo() {
         return <div style={{ width: 30, height: 30 }} />
     }
 
-    const logoSrc = resolvedTheme === 'dark' ? '/saniti-dark-mode.svg' : '/saniti-light-mode.svg'
+    const logoSrc = resolvedTheme === 'dark' ? '/logo/saniti-dark-mode.svg' : '/logo/saniti-light-mode.svg'
 
     return (
         <Image src={logoSrc} alt="Logo" width={30} height={30} />

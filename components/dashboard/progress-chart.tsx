@@ -17,8 +17,9 @@ import {
 import { progressChartConfig, progressChartData } from "@/lib/fake-data"
 
 import { Progress } from "@/components/ui/progress"
+import { User } from "@/lib/types"
 
-export function ProgressChart() {
+export function ProgressChart(props:User) {
     const currentMonth = new Date().toLocaleDateString('fr-FR', { 
         month: 'long', 
         year: 'numeric' 
