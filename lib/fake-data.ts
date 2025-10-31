@@ -1,6 +1,7 @@
 import {
     ChartConfig,
 } from "@/components/ui/chart"
+import { Beef, Droplet, Flame, Wheat } from "lucide-react"
 
 /*
 
@@ -16,6 +17,28 @@ export const currentUser = {
     height: "185 cm",
     nbTokens: "14,568",
     streak: "87 j"
+}
+
+/*
+
+FAKE DATA pour la nutrition dans le dashboard
+
+*/
+
+export const currentFood = {
+    imageUrl: "/asset/food.jpg",
+    name: "Buddha Bowl",
+    description: "Bol de tofu avec légumes frais, maïs, œufs et edamame.",
+    type: "Diner",
+    difficulty: "Facile",
+    time: "30 minutes",
+    score: 73,
+    nutriments: [
+        {type:"kCal",data: 450, icon: Flame},
+        {type:"glucides",data: 40, icon: Wheat},
+        {type:"protéines",data: 35, icon: Beef},
+        {type:"gras",data: 15, icon: Droplet},
+    ]
 }
 
 /*
